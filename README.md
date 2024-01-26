@@ -1,0 +1,10 @@
+# submarine-signal
+Here are file descriptions with links to live, interactive demos:
+1. Sensor_Amplitude.html (no live demo, but you can download just this file and run in your favorite browser) | A 3D plot of noisy wave amplitude data with a slider over timestamps.
+2. [FFT.html](https://raw.githack.com/krishna-saxena/submarine-signal/main/FFT.html) | The magnitude of the shifted 4D Fast Fourier Transform of sensor data, with a slider over time frequency values. For each time frequency, the 100 fequency coordinates ordered by their FFT magnitude are plotted with tooltips.
+3. [FFT_No_Outlier.html](https://raw.githack.com/krishna-saxena/submarine-signal/main/FFT_No_Outlier.html) | Same visualization as FFT.html but with the outlier at $({freq}_t, {freq}_x, {freq}_y, {freq}_z) = (0,0,0,0)$ removed so that the variation of amplitudes in the frequency domain is more visible.
+4. [Find_Kernel.html](https://raw.githack.com/krishna-saxena/submarine-signal/main/Find_Kernel.html) | The magnitude of the Fast Fourier Transform of sensor data, with amplitude data for all time frequencies of interest shown in one frame.
+5. [Draw_Kernel.html](https://raw.githack.com/krishna-saxena/submarine-signal/main/Draw_Kernel.html) | Same visualization as Find_Kernel.html but with the $2\sigma$ shell of a handcrafted Gaussian Filter.
+6. [Filtered_FFT.html](https://raw.githack.com/krishna-saxena/submarine-signal/main/Filtered_FFT.html) | The amplitudes of the convolution between the FFT and Gaussian Filter. Again, there is a slider for all time frequencies and, for each time frequency, the top 100 frequency coordinates ordered by their FFT magnitude are plotted with tooltips.
+7. Filtered_Ampl.html (no live demo, but you can download just this file and run in your favorite browser) | The wave amplitude of the Inverse Fast Fourier Transform of the filtered FFT.
+8. [Final_Trajectory.html](https://raw.githack.com/krishna-saxena/submarine-signal/main/Final_Trajectory.html) | An animated trajectory of the submarine with tooltips for location every 30 minutes.
